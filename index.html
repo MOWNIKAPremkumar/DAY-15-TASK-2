@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+ /* *{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+} */
+.margin{
+    margin: 5%;
+}
+
+body{
+    background-color: whitesmoke;
+    color: black;
+}
+button{
+    background-color: #79a3b1;
+}
+.tr{
+border-color:1px solid black;
+}
+
+</style>
+</head>
+<body>
+    <script src="script.js"></script>
+
+<div class="margin">
+    <div class="row modified d-flex justify-content-between">
+        <div class=""></div>
+        <div>
+                <h1>Form Submission:</h1>
+                <label for="fname">First Name:</label><br>
+                <input type="text" id="fname" name="fname"  placeholder="First Name" ><br>
+                <label for="lname">Last Name:</label><br>
+                <input type="text" id="lname" name="lname"  placeholder="Last Name" ><br>
+                <label for="address1">Address Line 1:</label><br>
+                <input type="text" id="address1" name="address1" placeholder="Address Line 1" ><br>
+                <label for="address2">Address Line 2:</label><br>
+                <input type="text" id="address2" name="address2" placeholder="Address Line 2" ><br>
+                <label for="pin">PIN:</label><br>
+                <input type="number" id="pin" name="pin"  placeholder="PIN" ><br>
+                <label for="gender">Gender:</label><br>
+                <label for="male"></label><br>
+                <input type="radio" id="male" name="female" value="male"> Male
+                <label for="female"></label><br>
+                <input type="radio" id="female" name="female" value="female"> Female<br><br>
+                <label for="food">Choice of Food: <span class="span" >(must choose at least 2 out of 5 options)</span></label><br>
+                <input type="checkbox" name="food" value="north Indian" id="food" >North Indian  <br>
+                <input type="checkbox" name="food" value="south Indian" id="food" >South Indian <br>
+                <input type="checkbox" name="food" value="chinese" id="food" >Chinese <br>
+                <input type="checkbox" name="food" value="japanese" id="food"  >Japanese <br>
+                <input type="checkbox" name="food" value="sea-food" id="food" >Sea Food <br><br>
+                 <label for="state">State:</label><br>
+                <input type="text" id="state" name="state"placeholder="State" ><br>
+                <label for="country">Country:</label><br>
+                <input type="text" id="country" name="country"placeholder="Country" ><br><br>
+               <button type = "button" onclick=" function newtable()"> Submit </button>
+            </form>
+        </div>
+        <br>
+        <br>
+        <div class="col  col-sm-2 col-md-4 col-md-6">
+            <h2>Temporary Database</h2><br>
+            <table class="table table-striped"> 
+                <thead>
+                    <tr style="background-color: grey;" >
+                    <td>First Name</td>
+                    <td>Last Name</td>
+                    <td>Address</td>
+                    <td>Pincode</td>
+                    <td>Gender</td>
+                    <td>Food</td>
+                    <td>State</td>
+                    <td>Country</td>
+                </tr>
+            </thead>
+            <tbody> 
+               </tbody>
+            </table>
+        </div>
+    </div>
+</div>
+
+</body>
+</html>
+
